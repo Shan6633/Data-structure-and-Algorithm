@@ -9,15 +9,15 @@
 #include <set>
 using namespace std;
 
-void helper(vector<int> &nums,vector<vector<int>> &res,int n,vector<int> &tmp){
+void helper(vector<int> &nums,set<vector<int>> &res,int n,vector<int> &tmp){
     if(nums.empty()){
-        res.push_back(nums);
+        res.insert(nums);
         return;
     }
 
     for (vector<int>::iterator i = nums.begin();i<nums.end();i++){
         int  p = *i;
-        res.push_back(nums);
+        res.insert(nums);
         nums.erase(i);
         helper(nums, res,n+1,tmp);
         nums.insert(i,p);
@@ -25,14 +25,14 @@ void helper(vector<int> &nums,vector<vector<int>> &res,int n,vector<int> &tmp){
 
 }
 
-vector<vector<int>> combination(vector<int> &nums){
-    vector<vector<int>> result;
+set<vector<int>> combination(vector<int> &nums){
+    set<vector<int>> result;
     helper(nums, result,0,nums);
     return result;
 }
 
 int  main(){
-    vector<vector<int>> a;
+    set<vector<int>> a;
     vector<int> p ={2,6,8};
     a=combination(p);
     for(auto i:a){
