@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/liushan/CLionProjects/Data-structure-and-Algorithm/cpmbination.cpp
+stdio.h
+-
+vector
+-
+iostream
+-
+algorithm
+-
+set
+-
+
+/Users/liushan/CLionProjects/Data-structure-and-Algorithm/maze.cpp
+
+/Users/liushan/CLionProjects/Data-structure-and-Algorithm/permutation.cpp
+
