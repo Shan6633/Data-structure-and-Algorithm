@@ -1,1 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/c++  -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/Data-structure-and0Algorithm.dir/maze.cpp.o CMakeFiles/Data-structure-and0Algorithm.dir/permutation.cpp.o CMakeFiles/Data-structure-and0Algorithm.dir/cpmbination.cpp.o  -o Data-structure-and0Algorithm 
